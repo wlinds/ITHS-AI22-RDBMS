@@ -1,8 +1,8 @@
 import sqlite3
-connection = sqlite3.connect('Explorations/test-db.db')
+connection = sqlite3.connect('Explorations/primes.db')
 cursor = connection.cursor()
 
-cursor.execute("SELECT * FROM dogs")
+cursor.execute("SELECT * FROM numbers")
 _ = cursor.fetchall()
 for i in _:
     print(i)
